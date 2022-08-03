@@ -2,9 +2,22 @@
 <html>
 <head>
     <style>
+        /* .은 클래스 셀렉터 */
        .special {
             font-size: 2em;
             background-color: yellow;
+        }
+
+        .korea {
+            color:red;
+            background-color: blue;
+            font-weight: bold;
+            font-size: 3em;
+        }
+        /*마지막 p요소 2개에 아래 규칙이 적용되도록 클래스 속성을 추가*/
+        .error{
+            text-decoration: line-through;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -12,15 +25,15 @@
     <h1>html class</h1>
     <p>여러 요소를 그룹 짓는 attribute</p>
 
-    <p>Lorem, ipsum dolor.</p>
+    <p class="korea">Lorem, ipsum dolor.</p>
     <p class="special">Laboriosam, qui cupiditate.</p>
     <p class="special">Ut, porro ducimus.</p>
-    <p>Natus, ipsam eaque.</p>
+    <p class="korea">Natus, ipsam eaque.</p>
     <p class="special">A, laboriosam neque!</p>
-    <p>Ratione, doloribus dicta!</p>
-    <p>Autem, cupiditate facilis!</p>
+    <p class="korea">Ratione, doloribus dicta!</p>
+    <p class="error">Autem, cupiditate facilis!</p>
     <p>Reiciendis, ratione tenetur!</p>
-    <p>Aliquid, eum inventore?</p>
-    <p>Quibusdam, et quam.</p>
+    <p class="error">Aliquid, eum inventore?</p>
+    <p class="error">Quibusdam, et quam.</p>
 </body>
 </html>
