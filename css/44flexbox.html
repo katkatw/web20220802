@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .item{
+            font-size:48px;
+        }
+        .item:nth-child(odd){
+            background-color:gold ;
+        }
+        .item:nth-child(even){
+            background-color: aqua;
+        }
+        .container{
+            background-color: chocolate;
+            display:flex;
+            height:300px;
+        }
+
+        .m1-auto{
+            margin-left: auto;
+        }
+
+    </style>
+</head>
+<body>
+   
+
+    <style>
+        .parent{
+            display:flex;
+        }
+        .parent>div{
+            font-size: 48px;
+            font-weight: bold;
+            padding:50px 25px;
+        }
+        .parent>div:hover{
+            background-color: green;
+        }
+    </style>
+    <div class="parent">
+        <div>tutorials<i class="fa-solid fa-caret-down"></i></div>
+        <div>references<i class="fa-solid fa-caret-down"></i></div>
+        <div>exercises<i class="fa-solid fa-caret-down"></i></div>
+        <div class="m1-auto">videos</div>
+
+        <div class="ml-left">Pro</div>
+        <div>Get Certified</div>
+        <div>Website</div>
+        <div>Log in</div>
+    </div>
+</body>
+</html>
