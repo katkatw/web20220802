@@ -10,36 +10,33 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    //object의 method(기능) : 객체내의 함수(function)        //지금 아래 프로퍼티 5개있는데 메소드(함수는) 3개
-    let a = {
-        name: "jhope",
-        age: 20,
-        sing: function() {
-            console.log("노래부른다.");
-        },
-        dance: function () {
-            console.log("춤을 춘다.");
-        },
-        drink: function () {
-            console.log("물을 마신다.");
-        }
+    let a ={
+        name: "donald",
+        score: [90, 91, 80, 89]  //array만들기
     };
 
-    function myfunc() {
-        console.log("마이펑크함수 실행됨");
-    };
-
-    myfunc(); //함수 호출
-
-    console.log(a.name);
-
-    a.sing(); //메소드 호출
-    a.dance();
-    a.drink();
+    let arr = [2, 3, 4];
+    console.log(arr[1]); // 3
 
 
-    //a.drink(); //존재하지 않는 객체를 부르면 에러
+    console.log(a.score[0]); // 90
+    console.log(a.score[1]); // 91
+    console.log(a.score[2]); // 80
+    console.log(a.score[3]); // 89
 
+    console.log("for 사용");
+    for (let i = 0; i < a.score.length; i++) {
+        console.log(a.score[i]);   
+    }
+
+    // 배열의 값 변경 작성
+    a.score[0] = 5;
+    a.score[1] = 6;
+    a.score[2] = 7;
+    a.score[3] = 8;
+    a.score[4] = 9;
+
+    console.log(a.score); // [5, 6, 7, 8]
 
 
     </script>

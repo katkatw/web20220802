@@ -9,37 +9,33 @@
 <body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script>
-    //object의 method(기능) : 객체내의 함수(function)        //지금 아래 프로퍼티 5개있는데 메소드(함수는) 3개
+    <script>            // {}이것도 객체다
     let a = {
-        name: "jhope",
-        age: 20,
-        sing: function() {
-            console.log("노래부른다.");
-        },
-        dance: function () {
-            console.log("춤을 춘다.");
-        },
-        drink: function () {
-            console.log("물을 마신다.");
+        name: "donald",
+        age: 40,
+        car: {
+            model: "tesla",
+            color: "white",
+            weight: 1000
         }
-    };
+    }
 
-    function myfunc() {
-        console.log("마이펑크함수 실행됨");
-    };
-
-    myfunc(); //함수 호출
-
-    console.log(a.name);
-
-    a.sing(); //메소드 호출
-    a.dance();
-    a.drink();
+    console.log(a.car.model);
+    console.log(a.car.model);
+    console.log(a.car.weight);
 
 
-    //a.drink(); //존재하지 않는 객체를 부르면 에러
+    //model, color, weight 변경하는 코드 작성
 
+
+    a.car.model = "sonata";
+    a.car.color = "black";
+    a.car.weight = 5000;
+
+
+    console.log(a.car.model); // "sonata"
+    console.log(a.car.color); // "black"
+    console.log(a.car.weight); // "5000"
 
 
     </script>
