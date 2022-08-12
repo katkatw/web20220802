@@ -18,7 +18,7 @@
     let b = "hello"; //String
     let c = function () {
         
-    }; //function
+    }; //function  //함수도 값이 될 수 있다
     let d = []; // array
     let e = {}; // object
 
@@ -44,9 +44,39 @@
     console.log(i);
 
     console.log(i.group);  //i객체의 group 프로퍼티 //.으로 연결할 수 있다
-
+    console.log(i.name);
+    console.log(i.age);
+    console.log(i.song);
     console.log(f.name);
     console.log(g.name);
+
+    //console.log(i.name, i.age, i.song); //이렇게도 할 수 있다
+
+    //객체의 프로퍼티 값 변경
+    let j = 3;
+    j = 4;
+
+    i.age = 30; //프로퍼티 값 변경
+    i.song ="butter"; //프로퍼티 값 변경
+    console.log(i);
+    console.log(i.age);
+    console.log(i.song);
+
+    //i객체의 name, group 프로퍼티 값을 변경하는 코드 작성
+
+    i.name = "yoon";
+    i.group = "winner";
+
+    console.log(i.name);
+    console.log(i.group);
+    console.log(i);
+
+
+
+
+
+
+
     
     //메소드는 대부분 다 메소드로 불리고 가끔 펑션이기도  
     //프로퍼티는 자바에서는 필드 다른데선 어트리뷰트로 불리는 값이다..
