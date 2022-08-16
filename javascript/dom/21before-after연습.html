@@ -12,9 +12,7 @@
     <button id="btn1">#li1 전에 추가 (before)</button>
     <button id="btn2">#li1 뒤에 추가 (after)</button>
     <ul id="ul1">
-        <li id="li1">
-            Lorem.
-        </li>
+        <li id="li1">Lorem.</li>
     </ul>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -24,8 +22,9 @@
             let li = document.createElement("li");
             li.textContent = val;
 
-            
-            document.querySelector("#li1").before(li);
+            let ol = document.querySelector("ul");
+            ol.prepend(li);
+            document.querySelector("#btn1").before(li1);
         });
 
         document.querySelector("#btn2").addEventListener("click", function () {
@@ -33,10 +32,20 @@
             let li = document.createElement("li");
             li.textContent = val;
 
-
-            document.querySelector("#li1").after(li);
+            let ol = document.querySelector("ul");
+            ol.prepend(li);
+            document.querySelector("#btn2").after(li1);
         });
         
+
+
+    let li1 = document.createElement("li1");
+    li1.textContent = "내일은 수요일";
+    
+    
+    
+
+
 
     </script>
 </body>
